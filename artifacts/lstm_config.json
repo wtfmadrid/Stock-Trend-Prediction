@@ -1,0 +1,8 @@
+{
+  "seq_len": 60,
+  "train_end": "2022-01-01",
+  "signal_threshold": 0.0,
+  "rebalance_every": 1,
+  "cost_bps": 5.0,
+  "model_type": "LSTMModel_no_embedding"
+}
