@@ -119,7 +119,7 @@ def add_indicators(df: pd.DataFrame) -> pd.DataFrame:
     out["MA100"] = close.rolling(100).mean()
     out["MA200"] = close.rolling(200).mean()
 
-    # Returns (core finance feature)
+    # Returns 
     out["ret"] = close.pct_change()
     out["log_ret"] = np.log(close).diff()
 
@@ -284,6 +284,8 @@ def plot_candles_with_overlays(
         ),
     ) 
     st.plotly_chart(fig, use_container_width=True)
+    st.caption(f"Latest available date: {df1['date'].max().date()}")
+
 
 
 
@@ -474,7 +476,7 @@ def infer_lstm(model, device: str, seq_batch: np.ndarray) -> np.ndarray:
 
 
 
-# Backtest (model-agnostic): works for LSTM preds (and any preds array)
+# Backtest: works for LSTM preds (and any preds array)
 def max_drawdown(equity_curve: pd.Series) -> float:
     peak = equity_curve.cummax()
     dd = equity_curve / peak - 1.0
