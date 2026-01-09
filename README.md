@@ -2,6 +2,8 @@
 
 A student-friendly, finance-focused Streamlit web app that lets you analyze stocks across **US (NYSE/NASDAQ)**, **Canada (TSX)**, and **India (NSE)** markets using interactive charts and a machine-learning model (LSTM) to forecast **next-day returns**. The app also includes a realistic **transaction-cost-aware backtest** to compare the strategy vs **Buy & Hold**.
 
+Link for overview of project: https://drive.google.com/file/d/1PyU9y1BVSD3u-Q570-Zu8ahORXs6tRKA/view?usp=sharing
+
 ---
 
 ## 🚀 What this project does
